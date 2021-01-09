@@ -1,0 +1,21 @@
+header.header
+    .container
+        .row.align-items-center
+            .col-1
+                a(href="/").logo
+                    img(src="/assets/img/logo.svg", alt="logotype")
+                    span.slash.slash--bottom ///
+            .col-2
+                a(href="/").header-logo.red-dot metria
+            .col-6
+                navbar.navbar
+                    ul.menu
+                        +headerItem("Главная", "/")
+                        +headerItem("Услуги", "/")
+                        +headerItem("О нас", "/")
+                        +headerItem("Новый кейс", "/")
+            .col
+                button.button.header__button.ms-auto оставить заявку
+        .row
+            .col-offset-1
+                

@@ -1,8 +1,8 @@
-@import 'utils/libs';
 @import 'utils/vars';
 @import 'utils/mixins';
 @import 'utils/fonts';
 @import 'utils/reset';
+@import 'utils/other';
 
 html {
   line-height: $mainLineHeight;
@@ -28,6 +28,8 @@ body {
   font-weight: $mainFontWeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #000;
+  color: white
 }
 
 *,
@@ -55,3 +57,7 @@ li {
   padding: 0;
   list-style-type: none;
 }
+
+@import 'modules/bootstrap-grid.scss';
+@import 'modules/header.sass';
+@import 'modules/hero.sass';
