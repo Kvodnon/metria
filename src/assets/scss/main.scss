@@ -58,6 +58,12 @@ li {
   list-style-type: none;
 }
 
-@import 'modules/bootstrap-grid.scss';
+@import 'modules/bootstrap-grid';
 @import 'modules/header.sass';
 @import 'modules/hero.sass';
+@import 'modules/portfolio.sass';
+@import 'modules/benefits.sass';
+@import 'modules/newcase.sass';
+@import 'modules/steps.sass';
+@import 'modules/level.sass';
+@import 'modules/footer.sass';

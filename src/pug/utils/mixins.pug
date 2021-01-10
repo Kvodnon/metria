@@ -1,3 +1,25 @@
 mixin headerItem(title, link)
     li.menu-item.menu__item
         a(href="#{link}").menu-link.red-dot #{title}
+
+mixin folioItem(title)
+    .col-4
+        a(href="#").folio-item #{title}
+
+mixin benefit(img, title)
+    .benefit(style={background: 'url(' + img + ') no-repeat center'})
+        span.benefit-description #{title}
+
+mixin step(step, title, desc, img)
+    .col-4
+        span.step-num #{step}
+        .row
+            .col-9.ms-auto
+                .step(style={background: "url(" + img + ") no-repeat"})
+                    h3.step-title #{title}
+                    p.step-desc #{desc}
+                    span.slash ///
+                    span.slash ///
+
+mixin social(link, img)
+    a(href="#{link}", style={"background-image": "url(" + img + ")"}).social-link
